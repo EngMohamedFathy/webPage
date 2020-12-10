@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #40485b;
+   
+}
+#body{
+     margin: 25px;
+}
+header{
+    text-transform: capitalize;
+    font-family: arial;
+}
+
+header .logo{
+    margin-right: 10px;
+}
+
+header nav ul{
+    display: inline; 
+}
+header nav ul li{
+    list-style-type: none;
+    float: left;
+    margin: 15px 40px;
+    font-size: 1.1em;
+}
+header nav ul li a{
+    transition: color 0.2s ease-in-out;
+}
+header nav ul li a:hover{
+    color: #0babfc;
+}
+header img{
+    float: left;
+}
+header .btn-signup{
+    float: right;
+    padding: 3px;
+    background: linear-gradient(to right, #a239a2, #007eff);
+    border-radius: 20px;
+    color: aliceblue;
+    width: 100px;
+   
+}
+header .btn-signup .module{
+    padding: 9px;
+    background: #40485b; 
+    border-radius: 17px;
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+header .btn-signup .module:hover{
+    background: none;
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+}
+
+.clearfix{
+    clear: both;
+}
+header nav ul li:first-child a{
+    color: #0babfc;
+}
+
+
+@keyframes imganimate{
+    from{
+        transform: translateY(-20px);
+    }
+    to{
+        transform: translateY(20px);
+    }
+}
+
+
+/************************/
+#content{
+    margin: 6%;
+}
+#content article{
+    width: 50%;
+    float: left;
+}
+#content h2{
+    font-size: 80px;
+    font-family: unset;
+    color:white;
+    line-height: 1.1em;
+    font-style: italic;
+}
+#content article h2 span{
+    text-decoration: underline;
+    text-decoration-color: #15a2f9;
+    font-size: 0.6em;
+    
+}
+#content article p{
+    line-height: 1.5em;
+    color: gray;
+    font-size: 1.3em;
+    padding-top: 1.5em;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+#content .run_btn{
+    font-size: 2em;
+    font-family: fantasy;
+    color:white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 70px;
+    background: linear-gradient(to right, #a239a2, #007eff);
+    padding: 4px;
+}
+#content .run_btn .module{
+    width: 100%;
+    height: 100%;
+    background: #40485b; 
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+}
+
+#content .run_btn .module:hover{
+    background: none;
+}
+.learn_more{
+    margin-left: 10px;
+    text-transform: uppercase;
+    color:#0babfc;
+    font-size: 1.1em;
+    font-family: arial;
+    line-height: 5px;
+}
+.bitcoin{
+        animation: imganimate 2s infinite alternate;
+}
+
+/****/
+.side_tool{
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    cursor: pointer;
+    z-index: 2;
+    width: 450px;
+    height: 450px;
+    transition: all 2s linear;
+    
+    
+}
+.side_tool:hover .rect{
+    left: -450px;
+}
+.side_tool .cicle{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    color: black;
+    z-index: 2;
+    font-family: 'Roboto';
+    line-height: 75px;
+    font-size: 1.5em;
+    padding-left: 5px;
+    
+}
+.side_tool .rect{
+   background: white;
+    border-radius: 15%;
+    width: 450px;
+    height: 450px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -476px;
+    top: -188px;
+    transition: all 2s linear;
+    box-shadow: 5px 2px 26px black;
+}
+
+/******************/
+.side_social{
+    position: fixed;
+    top: 20%;
+    right: 30px;
+}
+.side_social ul li{
+    list-style-type: none;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    border:3px solid gray;
+    color:gray;
+    width: 47px;
+    height: 47px;
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.side_social ul li:hover{
+    background: #fff;
+}
+.side_social .line{
+    height: 200px;
+    width: 3px;
+    background-color: gray;
+    margin: 10px auto;
+}
+
+/**********/
+footer{
+    width: 100%;
+    margin-top: -142px;
+}
+/*********/
+.overall{
+    position: fixed;
+    margin-top: -25px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: #333333b8;
+    display: none;
+}
+
+.reset-rotate-rect{
+    transform: rotate(0deg) !important;
+    top:0px !important;
+    left:0px ! important;
+}
+.reset-rotate{
+    top: 50%;
+    left: 50%;
+    margin-top: -225px;
+    margin-left: -225px;
+}
